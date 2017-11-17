@@ -717,6 +717,24 @@ header.main-nav.responsive {
   top: 29px;
   left: 8px; }
 
+.main_content {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding-left: 16px;
+  padding-right: 16px; }
+  .main_content .container {
+    display: flex;
+    flex-direction: column;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 16px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center; }
+  .main_content :hover {
+    background-color: gray; }
+
 .bkt-strengths {
   padding: 64px;
   text-align: center;
