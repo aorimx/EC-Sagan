@@ -78,5 +78,35 @@
         }
       }
     }
+    &.percent-70 {
+      width: 70%;
+      padding-right: $space-2;
+      &:last-child {
+        padding-right: 0;
+      }
+      @media screen and (max-width: 768px){
+        width: 100%;
+        padding-right: 0;
+        padding-left: $space-3;
+        img{
+          display: none;
+        }
+      }
+    }
+    &.percent-30 {
+      width: 30%;
+      padding-right: $space-2;
+      &:last-child {
+        padding-right: 0;
+      }
+      @media screen and (max-width: 768px){
+        width: 100%;
+        padding-right: 0;
+        padding-left: $space-3;
+        img{
+          display: none;
+        }
+      }
+    }
   }
 }

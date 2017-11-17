@@ -540,6 +540,30 @@ header.main-nav.responsive {
           padding-left: 24px; }
           .grid .unit.six img {
             display: none; } }
+    .grid .unit.percent-70 {
+      width: 70%;
+      padding-right: 16px; }
+      .grid .unit.percent-70:last-child {
+        padding-right: 0; }
+      @media screen and (max-width: 768px) {
+        .grid .unit.percent-70 {
+          width: 100%;
+          padding-right: 0;
+          padding-left: 24px; }
+          .grid .unit.percent-70 img {
+            display: none; } }
+    .grid .unit.percent-30 {
+      width: 30%;
+      padding-right: 16px; }
+      .grid .unit.percent-30:last-child {
+        padding-right: 0; }
+      @media screen and (max-width: 768px) {
+        .grid .unit.percent-30 {
+          width: 100%;
+          padding-right: 0;
+          padding-left: 24px; }
+          .grid .unit.percent-30 img {
+            display: none; } }
 
 .container-product {
   padding-left: 16px; }
@@ -1098,7 +1122,7 @@ button, .btn-solid {
     width: 15px; }
 
 form {
-  display: flex; }
+  font-weight: 100%; }
   form fieldset {
     display: flex;
     flex-direction: column; }
