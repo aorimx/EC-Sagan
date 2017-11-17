@@ -52,5 +52,29 @@
         padding-right: 0;
       }
     }
+    &.five {
+      width: 45%;
+      padding-right: $space-2;
+      padding-left: $space-3;
+      &:last-child {
+        padding-right: 0;
+      }
+      @media screen and (max-width: 768px){
+        width: 100%;
+        padding-right: 0;
+      }
+    }
+    &.six {
+      width: 10%;
+      padding-right: $space-2;
+      &:last-child {
+        padding-right: 0;
+      }
+      @media screen and (max-width: 768px){
+        width: 25%;
+        padding-right: 0;
+        padding-left: $space-3;
+      }
+    }
   }
 }
