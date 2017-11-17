@@ -248,7 +248,7 @@ footer {
       align-items: flex-start;
       margin-top: 64px; }
       footer .j-wrap .contact-ways h3 {
-        color: #FFF; }
+        color: #4caf50; }
       footer .j-wrap .contact-ways hr {
         width: 80px;
         margin-bottom: 32px; }
@@ -1373,6 +1373,10 @@ img {
 
 .icons-list-inline--lg img {
   max-width: 128px; }
+
+.icons-list-inline--xlg img {
+  max-width: 256px;
+  max-height: 256px; }
 
 .p-img-left {
   display: flex;

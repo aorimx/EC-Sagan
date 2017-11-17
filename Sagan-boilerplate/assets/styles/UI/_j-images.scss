@@ -17,6 +17,12 @@ img {
     max-width: 128px;
   }
 }
+.icons-list-inline--xlg {
+  img {
+    max-width: 256px;
+    max-height: 256px;
+  }
+}
 .p-img-left {
   display: flex;
   justify-content: space-between;
