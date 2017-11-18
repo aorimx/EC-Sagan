@@ -18,5 +18,8 @@
 		background-color: gray;
 	};
 }
-
-	
+ @media screen and (max-width: 768px){
+ 	.main_content{
+    	padding-left: 0;	
+ 	}
+}
