@@ -10,6 +10,7 @@
   }
 }
 form {
+  max-width: 200;
   font-weight: 100%;
   fieldset {
     display: flex;
@@ -53,7 +54,7 @@ textarea, select {
   }
 }
 select {
-  border: none;
+  border-color: $gray-lighter;
   &:focus {
     outline: none;
   }

@@ -519,6 +519,24 @@ header.main-nav.responsive {
         .grid .unit.fourth {
           width: 100%;
           padding-right: 0; } }
+    .grid .unit.percent-70 {
+      width: 70%;
+      padding-right: 16px; }
+      .grid .unit.percent-70:last-child {
+        padding-right: 0; }
+      @media screen and (max-width: 768px) {
+        .grid .unit.percent-70 {
+          width: 100%;
+          padding-right: 0; } }
+    .grid .unit.percent-30 {
+      width: 30%;
+      padding-right: 16px; }
+      .grid .unit.percent-30:last-child {
+        padding-right: 0; }
+      @media screen and (max-width: 768px) {
+        .grid .unit.percent-30 {
+          width: 100%;
+          padding-right: 0; } }
     .grid .unit.five {
       width: 45%;
       padding-right: 16px; }
@@ -540,30 +558,6 @@ header.main-nav.responsive {
           padding-left: 24px; }
           .grid .unit.six img {
             display: none; } }
-    .grid .unit.percent-70 {
-      width: 70%;
-      padding-right: 16px; }
-      .grid .unit.percent-70:last-child {
-        padding-right: 0; }
-      @media screen and (max-width: 768px) {
-        .grid .unit.percent-70 {
-          width: 100%;
-          padding-right: 0;
-          padding-left: 24px; }
-          .grid .unit.percent-70 img {
-            display: none; } }
-    .grid .unit.percent-30 {
-      width: 30%;
-      padding-right: 16px; }
-      .grid .unit.percent-30:last-child {
-        padding-right: 0; }
-      @media screen and (max-width: 768px) {
-        .grid .unit.percent-30 {
-          width: 100%;
-          padding-right: 0;
-          padding-left: 24px; }
-          .grid .unit.percent-30 img {
-            display: none; } }
 
 .container-product {
   padding-left: 16px; }
@@ -573,7 +567,9 @@ header.main-nav.responsive {
 
 .add-cart input {
   max-width: 64px;
-  margin-right: 16px; }
+  margin-right: 16px;
+  border: solid 1px #d9d9d9;
+  border-radius: 4px; }
 
 @media screen and (max-width: 768px) {
   .btn-success {
@@ -584,8 +580,7 @@ header.main-nav.responsive {
   .add-commentary p {
     font-size: 8px; }
   .add-commentary img {
-    max-height: 16px;
-    margin-right: 16px; }
+    max-height: 16px; }
 
 .new-cost {
   color: #4caf50; }
@@ -593,9 +588,6 @@ header.main-nav.responsive {
 .old-cost {
   text-decoration: line-through;
   color: #f44336; }
-
-.text-center h3 {
-  text-align: center; }
 
 .main_content {
   display: inline-flex;
@@ -614,6 +606,33 @@ header.main-nav.responsive {
     text-align: center; }
   .main_content :hover {
     background-color: gray; }
+
+.container-form {
+  margin-top: 16px; }
+  .container-form .container-name {
+    display: inline-flex;
+    justify-content: space-between; }
+  .container-form .container-city {
+    display: inline-flex;
+    justify-content: space-between; }
+  @media screen and (max-width: 768px) {
+    .container-form .container-name {
+      display: flex;
+      flex-direction: column; }
+    .container-form .container-city {
+      display: flex;
+      flex-direction: column; } }
+
+.container-summary {
+  margin-top: 24px;
+  background: #f2f2f2;
+  max-height: 250px;
+  padding-left: 16px; }
+  .container-summary .btn-center {
+    padding: 8px; }
+  @media screen and (max-width: 900px) {
+    .container-summary {
+      padding-left: 0; } }
 
 .bkt-strengths {
   padding: 64px;
@@ -1140,6 +1159,7 @@ button, .btn-solid {
     width: 15px; }
 
 form {
+  max-width: 200;
   font-weight: 100%; }
   form fieldset {
     display: flex;
@@ -1203,7 +1223,7 @@ textarea, select {
     border-bottom-color: #FFF; }
 
 select {
-  border: none; }
+  border-color: #d9d9d9; }
   select:focus {
     outline: none; }
   select:active, select:focus, select:visited {
@@ -1264,7 +1284,8 @@ img {
   margin-bottom: 16px; }
 
 .icons-list-inline--sm img {
-  max-width: 32px; }
+  max-width: 32px;
+  padding-right: 8px; }
 
 .icons-list-inline img {
   max-width: 64px; }
