@@ -619,6 +619,33 @@ header.main-nav.responsive {
     width: 100%;
     text-align: right; }
 
+.container-form {
+  margin-top: 16px; }
+  .container-form .container-name {
+    display: inline-flex;
+    justify-content: space-between; }
+  .container-form .container-city {
+    display: inline-flex;
+    justify-content: space-between; }
+  @media screen and (max-width: 768px) {
+    .container-form .container-name {
+      display: flex;
+      flex-direction: column; }
+    .container-form .container-city {
+      display: flex;
+      flex-direction: column; } }
+
+.container-summary {
+  margin-top: 24px;
+  background: #f2f2f2;
+  max-height: 250px;
+  padding-left: 16px; }
+  .container-summary .btn-center {
+    padding: 8px; }
+  @media screen and (max-width: 900px) {
+    .container-summary {
+      padding-left: 0; } }
+
 .bkt-strengths {
   padding: 64px;
   text-align: center;
