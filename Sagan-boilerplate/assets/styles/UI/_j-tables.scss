@@ -17,8 +17,6 @@ table {
         color: $gray-ghost; //Utilizamos este color por tener un color muy cercano al blanco con distinción del
       }
       &:first-child {
-        border-top-left-radius: 8px;
-        border-bottom-left-radius: 8px;
       }
       &:last-child {
         padding-right: 16px;
@@ -28,6 +26,7 @@ table {
   }
   td {
     text-align: left;
+    vertical-align: top;
     padding-top: 8px;
     padding-right: 16px;
     padding-bottom: 8px;
@@ -35,10 +34,14 @@ table {
     color: $gray-dark;
     &:last-child{
       border-right: none;
+      text-align: right;
     }
     span {
       font-size: smaller;
       color: $gray-regular;
+    }
+    input{
+      width: 48px;
     }
   }
 }
