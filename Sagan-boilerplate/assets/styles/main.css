@@ -593,7 +593,8 @@ header.main-nav.responsive {
   display: inline-flex;
   flex-wrap: wrap;
   padding-left: 16px;
-  padding-right: 16px; }
+  padding-right: 16px;
+  width: 100%; }
   .main_content .container {
     display: flex;
     flex-direction: column;
@@ -607,9 +608,50 @@ header.main-nav.responsive {
   .main_content :hover {
     background-color: gray; }
 
+.content {
+  width: 100%;
+  text-align: center; }
+
+.contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .contents :hover {
+    background-color: gray; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-top: 16px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden; }
+
 @media screen and (max-width: 768px) {
   .main_content {
-    padding-left: 0; } }
+    padding-left: 0; }
+
+  .container:last-child {
+    display: none; }
+
+  .contents {
+    justify-content: center; } }
+@media screen and (max-width: 600px) {
+  .container {
+    display: none; }
+    .container:first-child {
+      display: flex;
+      flex-direction: column; }
+    .container:nth-child(2) {
+      display: flex;
+      flex-direction: column; }
+
+  .contents {
+    justify-content: center; } }
 .content-summary {
   background-color: gray;
   padding-left: 16px;
@@ -1263,24 +1305,25 @@ table {
     table tr th span {
       font-size: smaller;
       color: #f2f2f2; }
-    table tr th:first-child {
-      border-top-left-radius: 8px;
-      border-bottom-left-radius: 8px; }
     table tr th:last-child {
       padding-right: 16px;
       text-align: right; }
   table td {
     text-align: left;
+    vertical-align: top;
     padding-top: 8px;
     padding-right: 16px;
     padding-bottom: 8px;
     padding-left: 16px;
     color: #595959; }
     table td:last-child {
-      border-right: none; }
+      border-right: none;
+      text-align: right; }
     table td span {
       font-size: smaller;
       color: gray; }
+    table td input {
+      width: 48px; }
 
 img {
   max-width: 100%;
