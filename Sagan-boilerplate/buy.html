@@ -58,6 +58,18 @@
       <!-- Text Atoms -->
       <div class="grid">
         <div class="unit percent-70 container-form">
+          <div class="step">
+            <div class="step1">
+              <label> 1. Shipping</label>
+            </div>
+            <div class="step2">
+              <label> 2. Billing</label>
+            </div>
+            <div class="step3">
+              <label> 3.Review </label>  
+            </div>
+          </div>
+          <hr>
           <form>
                 <fieldset>
                     <h2>Sopping address</h2>
@@ -74,15 +86,17 @@
                     </div>
                     </div>
                     <!-- Adress -->
+                    <div class="form-address">
                     <label>Address </label>
                     <input type="text">
+                    </div>
                     <!-- CODE -->
                     <div class="container-city">
-                    <div>
+                    <div class="space-der">
                     <label>ZIP code</label>
                     <input type="text">
                     </div>
-                    <div>
+                    <div class="space-der">
                     <label>City</label>
                     <input type="text">
                     </div>
@@ -95,11 +109,13 @@
                     </div>
                     </div>
                     <!-- File input -->
+                    <div class="form-phone">
                     <label>Phone</label>
                     <input type="text">
+                    </div>
                      <!-- Checkbox with label  -->
                     <label>
-                        <input type="checkbox"> <b>Checkbox input</b>
+                        <input type="checkbox"> <b>Use this address for Billing</b>
                     </label>
                 </fieldset>
             </form>
