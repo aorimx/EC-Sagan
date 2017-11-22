@@ -137,34 +137,13 @@
                     <p>$485</p>
                   </td>
                   <td>
-                    <p><input type="number" name="" placeholder="1"></p>                    
+                    <p><input type="number" Placeholder="1" onkeyup="sumar(this.value);" onchange="sumar(this.value);"></p>
                     <p><a href="producto.html">Update</a></p>
                     <p><a href="producto.html">Remove</a></p>
                   </td>
-                  <td>$485</td>
-                </tr>
-                <tr>
                   <td>
-                    <div class="icons-list-inline--lg">
-                      <img src="https://dummyimage.com/1200x1200/000/fff" alt="">
-                    </div>
+                    <span id="spTotal">485</span>
                   </td>
-                  <td>
-                    <h4>Nombre de objeto</h4>
-                    <p>item:2424234</p>
-                    <p>limitado</p>
-                    <p><a href="producto.html">Edit</a></p>
-                    <p>in stock</p>
-                  </td>
-                  <td>
-                    <p>$485</p>
-                  </td>
-                  <td>
-                    <p><input type="number" name="" placeholder="1"></p>                    
-                    <p><a href="producto.html">Update</a></p>
-                    <p><a href="producto.html">Remove</a></p>
-                  </td>
-                  <td>$485</td>
                 </tr>
               </table>
                 <hr>
@@ -175,7 +154,9 @@
               <table>
                 <tr>
                   <th>Mercancia</th>
-                  <th>$485.00</th> 
+                  <th>
+                    <span id="spTotal"></span>
+                  </th> 
                 </tr>
                 <tr>
                   <th>Envio</th>
@@ -187,7 +168,9 @@
                 </tr>
                 <tr>
                   <th><h3>Total</h3></th>
-                  <th><h3>$485.00</h3></th> 
+                  <th><h3>
+                    <span id="spTotal"></span>
+                  </h3></th> 
                 </tr>
               </table>
               <div class="content">
@@ -204,7 +187,7 @@
         </div>
     </div>
     <div class="j-wrap">
-        <div class="content">
+        <div class="content content_padds">
           <h1>You might also like</h1>
         </div>
       <hr>
@@ -244,7 +227,20 @@
       </div>
     </div>
   </footer>
-
+   <script type="text/javascript">
+                    function sumar (valor) {
+                        var total = 0;  
+                        valor = parseInt(valor); // Convertir el valor a un entero (número).
+                        total = (total == null || total == undefined || total == "") ? 0 : total;
+                        if(parseInt(valor)>0){
+                        total = (485 * parseInt(valor));
+                        document.getElementById('spTotal').innerHTML = total;
+                        }
+                        else{
+                          document.getElementById('spTotal').innerHTML = 0;
+                        }
+                    }
+    </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="assets/scripts/ripple.js"></script>
   <script src="assets/scripts/header.js"></script>

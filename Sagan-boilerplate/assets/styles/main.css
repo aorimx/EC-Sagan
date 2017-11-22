@@ -611,6 +611,9 @@ header.main-nav.responsive {
   width: 100%;
   text-align: center; }
 
+.content_padds {
+  padding-top: 24px; }
+
 .contents {
   display: flex;
   flex-direction: row;
@@ -652,7 +655,7 @@ header.main-nav.responsive {
   .contents {
     justify-content: center; } }
 .content-summary {
-  background-color: gray;
+  background-color: #DADADA;
   padding-left: 16px;
   padding-top: 16px; }
   .content-summary .content {
@@ -1094,9 +1097,8 @@ button, .btn-solid {
   padding-bottom: 13px;
   padding-left: 24px;
   border: none;
-  border-radius: 12px;
   margin-bottom: 16px;
-  background-color: #607d8b;
+  background-color: #414042;
   cursor: pointer;
   color: #FFF;
   line-height: 1;
