@@ -137,7 +137,7 @@
                     <p>$485</p>
                   </td>
                   <td>
-                    <p><input type="number" Placeholder="1" onkeyup="sumar(this.value);" onchange="sumar(this.value);"></p>
+                    <p><input class="order-summary" type="number" Placeholder="1"></p>
                     <p><a href="producto.html">Update</a></p>
                     <p><a href="producto.html">Remove</a></p>
                   </td>
@@ -227,27 +227,9 @@
       </div>
     </div>
   </footer>
-   <script type="text/javascript">
-                    function sumar (valor) {
-                        var total = 0;  
-                        valor = parseInt(valor); // Convertir el valor a un entero (número).
-                        total = (total == null || total == undefined || total == "") ? 0 : total;
-                        if(parseInt(valor)>0){
-                        total = (485 * parseInt(valor));
-                          for(x=0; x<=document.getElementsByClassName('spTotal').length; x++){
-                            document.getElementsByClassName('spTotal')[x].innerHTML = total;
-                          }
-                        }
-                        else{
-                          for(x=0; x<=document.getElementsByClassName('spTotal').length; x++){
-                            document.getElementsByClassName('spTotal')[x].innerHTML = 0;
-                          }
-                        }
-                    }
-    </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="assets/scripts/ripple.js"></script>
   <script src="assets/scripts/header.js"></script>
-
+  <script src="assets/scripts/order-summary.js"></script>
 </body>
 </html>
