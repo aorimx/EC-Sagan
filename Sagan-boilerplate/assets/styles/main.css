@@ -588,6 +588,9 @@ header.main-nav.responsive {
   text-decoration: line-through;
   color: #f44336; }
 
+.container-descripcion {
+  margin-right: 32px; }
+
 .main_content {
   display: inline-flex;
   flex-wrap: wrap;
