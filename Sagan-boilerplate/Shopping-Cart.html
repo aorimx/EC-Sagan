@@ -142,7 +142,7 @@
                     <p><a href="producto.html">Remove</a></p>
                   </td>
                   <td>
-                    <span id="spTotal">485</span>
+                    <span class="spTotal">485</span>
                   </td>
                 </tr>
               </table>
@@ -155,7 +155,7 @@
                 <tr>
                   <th>Mercancia</th>
                   <th>
-                    <span id="spTotal"></span>
+                    <span class="spTotal">485</span>
                   </th> 
                 </tr>
                 <tr>
@@ -169,7 +169,7 @@
                 <tr>
                   <th><h3>Total</h3></th>
                   <th><h3>
-                    <span id="spTotal"></span>
+                    <span class="spTotal">485</span>
                   </h3></th> 
                 </tr>
               </table>
@@ -234,10 +234,14 @@
                         total = (total == null || total == undefined || total == "") ? 0 : total;
                         if(parseInt(valor)>0){
                         total = (485 * parseInt(valor));
-                        document.getElementById('spTotal').innerHTML = total;
+                          for(x=0; x<=document.getElementsByClassName('spTotal').length; x++){
+                            document.getElementsByClassName('spTotal')[x].innerHTML = total;
+                          }
                         }
                         else{
-                          document.getElementById('spTotal').innerHTML = 0;
+                          for(x=0; x<=document.getElementsByClassName('spTotal').length; x++){
+                            document.getElementsByClassName('spTotal')[x].innerHTML = 0;
+                          }
                         }
                     }
     </script>
