@@ -4,6 +4,13 @@
     padding-left: 0;
   }
 }
+.img-big:hover{
+  -moz-transform: scale(1.1);
+-webkit-transform: scale(1.1);
+-o-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1)
+}
 .add-cart {
   input{
   max-width: $space-8;
