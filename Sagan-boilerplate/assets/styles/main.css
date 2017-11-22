@@ -661,6 +661,8 @@ header.main-nav.responsive {
   background-color: #DADADA;
   padding-left: 16px;
   padding-top: 16px; }
+  .content-summary .spTotal {
+    color: black; }
   .content-summary .content {
     padding-right: 16px;
     width: 100%;
