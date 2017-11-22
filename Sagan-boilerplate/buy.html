@@ -120,20 +120,49 @@
                 </fieldset>
             </form>
         </div>
-        <div class="unit percent-30 container-summary">
-        <h3>Order summary</h3>
-        <p>Merchandise:</p>
-        <p>Shipping:</p>
-        <p>Tax:</p>
-        <h4>Order total:</h4>
-        <button class="bg-color-primary btn-center">Button</button>
+        <div class="unit percent-30">
+          <div class="content-summary">
+              <H3>Order summary</H3>
+              <table>
+                <tr>
+                  <th>Mercancia</th>
+                  <th>
+                    <span id="spTotal"></span>
+                  </th> 
+                </tr>
+                <tr>
+                  <th>Envio</th>
+                  <th>-</th> 
+                </tr>
+                <tr>
+                  <th>Tax</th>
+                  <th>-</th> 
+                </tr>
+                <tr>
+                  <th><h3>Total</h3></th>
+                  <th><h3>
+                    <span id="spTotal"></span>
+                  </h3></th> 
+                </tr>
+              </table>
+              <div class="content">
+                <button>Secure Checkout</button>
+              </div>
+              <div class="content">
+                <button>Check out with PayPal</button>
+              </div>
+              <div class="content">
+                <button>International Checkout</button>
+              </div>
+            </div> 
         </div>
       </div>
-    </div>
-  </main>
-  <footer>
+      <footer>
   <h3>Footer</h3>
   </footer>
+    </div>
+  </main>
+  
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="assets/scripts/ripple.js"></script>
