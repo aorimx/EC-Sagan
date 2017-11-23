@@ -19,7 +19,7 @@ table {
       &:first-child {
       }
       &:last-child {
-        padding-right: 16px;
+        padding-right: 0px;
         text-align: right;
       }
     }
@@ -28,9 +28,9 @@ table {
     text-align: left;
     vertical-align: top;
     padding-top: 8px;
-    padding-right: 16px;
+    padding-right: 0px;
     padding-bottom: 8px;
-    padding-left: 16px;
+    padding-left: 0px;
     color: $gray-dark;
     &:last-child{
       border-right: none;
@@ -42,6 +42,7 @@ table {
     }
     input{
       width: 48px;
+      padding-left: 16px;
     }
   }
 }
