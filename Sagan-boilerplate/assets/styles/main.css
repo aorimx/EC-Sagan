@@ -598,6 +598,13 @@ header.main-nav.responsive {
 .container-descripcion {
   margin-right: 32px; }
 
+.backg {
+  padding-top: 16px;
+  background-color: #dadada; }
+
+.space {
+  padding-top: 24px; }
+
 .main_content {
   display: inline-flex;
   flex-wrap: wrap;
@@ -676,6 +683,11 @@ header.main-nav.responsive {
     width: 100%;
     text-align: right; }
 
+@media screen and (max-width: 768px) {
+  .content-summary {
+    padding-right: 16px; }
+    .content-summary .content {
+      padding-right: 0; } }
 @media screen and (max-width: 600px) {
   table {
     width: 100%;
@@ -1347,15 +1359,15 @@ table {
       font-size: smaller;
       color: #f2f2f2; }
     table tr th:last-child {
-      padding-right: 16px;
+      padding-right: 0px;
       text-align: right; }
   table td {
     text-align: left;
     vertical-align: top;
     padding-top: 8px;
-    padding-right: 16px;
+    padding-right: 0px;
     padding-bottom: 8px;
-    padding-left: 16px;
+    padding-left: 0px;
     color: #595959; }
     table td:last-child {
       border-right: none;
@@ -1364,7 +1376,8 @@ table {
       font-size: smaller;
       color: gray; }
     table td input {
-      width: 48px; }
+      width: 48px;
+      padding-left: 16px; }
 
 img {
   max-width: 100%;
