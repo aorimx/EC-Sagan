@@ -708,6 +708,7 @@ header.main-nav.responsive {
     width: 100%; }
 
 .flexx {
+  padding-left: 8px;
   display: inline-flex;
   flex-wrap: wrap;
   width: 100%; }
@@ -741,7 +742,7 @@ header.main-nav.responsive {
     position: absolute; }
 
   tr td:nth-child(4) {
-    padding-left: 88px;
+    padding-left: 70px;
     display: inline-flex; }
 
   tbody td {
@@ -751,12 +752,14 @@ header.main-nav.responsive {
   tbody td:before {
     content: attr(data-th); }
 
-  .flexx .nonn {
-    display: block;
-    padding-left: 24px;
-    font-size: 16px; }
-  .flexx .widthh {
-    width: 50%; }
+  .flexx {
+    width: 100%; }
+    .flexx .nonn {
+      display: block;
+      padding-left: 24px;
+      font-size: 16px; }
+    .flexx .widthh {
+      width: 50%; }
 
   .nonnone {
     display: none; } }
@@ -1495,6 +1498,7 @@ table {
       padding-right: 0px;
       text-align: right; }
   table td {
+    width: 22%;
     text-align: left;
     vertical-align: top;
     padding-top: 8px;
@@ -1502,6 +1506,8 @@ table {
     padding-bottom: 8px;
     padding-left: 0px;
     color: #595959; }
+    table td:nth-child(2) {
+      padding-right: 8px; }
     table td:last-child {
       border-right: none;
       text-align: right; }
@@ -1509,10 +1515,13 @@ table {
       font-size: smaller;
       color: gray; }
     table td input {
-      width: 48px;
-      padding-left: 16px; }
+      width: 56px;
+      padding-left: 8px; }
 
 @media screen and (max-width: 600px) {
+  table td {
+    width: 100%; }
+
   table td:last-child {
     text-align: left; } }
 img {
