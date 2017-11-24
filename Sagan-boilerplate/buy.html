@@ -59,12 +59,12 @@
       <div class="grid">
         <div class="unit percent-70 container-form">
           <div class="step">
-            <div class="step1">
+            <div class="step1" id='step1'>
               <a href="">
                 <span> 1. Shipping</span>
               </a>
             </div>
-            <div class="step2">
+            <div class="step2" id='step2-sel'>
               <a href="">
                 <span> 2. Billing</span>
               </a>
@@ -76,6 +76,7 @@
             </div>
           </div>
           <hr>
+          <div id='ocultar'>
           <form>
                     <h2>Shipping address</h2>
                     <!-- Text input -->
@@ -132,6 +133,8 @@
                   </div>
                     </div>
             </form>
+          </div>
+          <div class="billig-container" id='oculto'>
             <div class="billing-address">
             <form>
               <h2>Billing address</h2>
@@ -145,7 +148,10 @@
             </form>
           </div>
           <div>
+            <div class="container-title icons-list-inline--sm">
             <h2>Gift Cards</h2>
+            <img src="assets/images/logo-suma.png">
+            </div>
             <div class="container-gift">
                     <div class="gift-certificate">
                     <label>Gift Certificate </label>
@@ -156,13 +162,16 @@
                     <input type="text">
                     </div>
                     <div class="btn-giftcard">
-                    <label>soy invisible wuju</label>
+                    <label class="lbl-oculto">soy invisible wuju</label>
                     <button>Apply</button>
                     </div>
             </div>
           </div>
           <div>
+            <div class="container-title icons-list-inline--sm">
             <h2>MoMA Membership Discount</h2>
+            <img src="assets/images/logo-suma.png">
+          </div>
             <div>
               <div class="grid">
                 <div class="unit half">
@@ -180,7 +189,7 @@
                   <input type="text">
                 </div>
                 <div class="unit half">
-                  <label class="nonn">sere invisible</label>
+                  <label class="nonn lbl-oculto">sere invisible</label>
                   <div class="unit half">
                     <button>Apply Discount</button>
                   </div>
@@ -237,6 +246,7 @@
             </div>
           </div>
         </div>
+      </div>
         <div class="unit percent-30">
           <div class="content-summary">
               <H3>Order summary</H3>
@@ -263,7 +273,7 @@
                 </tr>
               </table>
               <div class="content">
-                <button onclick="cambiar_container()">Continue to billing</button>
+                <button value="Mostrar" onclick="mostrar()">Continue to billing</button>
               </div>
             </div> 
         </div>
@@ -273,12 +283,10 @@
   </footer>
     </div>
   </main>
-  
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="assets/scripts/ripple.js"></script>
   <script src="assets/scripts/header.js"></script>
-  <script src="assets/scripts/cambio-containers.js"></script>
+  <script src="assets/scripts/cambio-container.js"></script>
 
 </body>
 </html>

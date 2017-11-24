@@ -767,8 +767,6 @@ header.main-nav.responsive {
   margin-top: 16px; }
   .container-form .step a {
     color: #000000; }
-  .container-form .step .step1 a:hover {
-    font-weight: bold; }
   .container-form .container-name {
     display: inline-flex; }
     .container-form .container-name .padd {
@@ -823,10 +821,20 @@ header.main-nav.responsive {
       margin-right: 16px; }
     .container-form .container-gift .btn-giftcard {
       width: 30%; }
-      .container-form .container-gift .btn-giftcard label {
+      .container-form .container-gift .btn-giftcard .lbl-oculto {
         opacity: 0; }
-  .container-form .billing-container {
+  .container-form .billig-container {
     display: none; }
+  .container-form .lbl-oculto {
+    opacity: 0; }
+  .container-form .step1 {
+    font-weight: bold; }
+  .container-form .container-title {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between; }
+    .container-form .container-title img {
+      max-height: 16px; }
   @media screen and (max-width: 768px) {
     .container-form .container-name {
       display: flex;
