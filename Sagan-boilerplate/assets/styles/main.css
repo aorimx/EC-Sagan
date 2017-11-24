@@ -691,17 +691,21 @@ header.main-nav.responsive {
 
   .contents {
     justify-content: center; } }
+.spacebottom {
+  padding-bottom: 16px; }
+
 .content-summary {
   background-color: #DADADA;
   padding-left: 16px;
+  padding-right: 16px;
   margin-top: 32px;
-  padding-top: 16px; }
+  padding-top: 16px;
+  position: sticky;
+  top: 80px; }
   .content-summary .spTotal {
     color: black; }
   .content-summary .content {
-    padding-right: 16px;
-    width: 100%;
-    text-align: right; }
+    width: 100%; }
 
 .flexx {
   display: inline-flex;
