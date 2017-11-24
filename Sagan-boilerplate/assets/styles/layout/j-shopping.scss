@@ -1,15 +1,23 @@
 .content-summary{
 	background-color: #DADADA;
-	padding-left: 16px;
-	margin-top: 32px;
-	padding-top: 16px;
+	padding-left: $space-2;
+	margin-top: $space-4;
+	padding-top: $space-2;
 	.spTotal{
 		color:black;
 	}
 	.content{
-		padding-right: 16px;
+		padding-right: $space-2;
 		width: 100%;
 		text-align: right;
+	}
+}
+@media screen and (max-width: 768px) {
+    .content-summary{
+		padding-right: $space-2;
+		.content{
+			padding-right: 0;
+		}
 	}
 }
 @media screen and (max-width: 600px) {
@@ -21,6 +29,5 @@
     _overflow: auto;
 
     margin: 0 0 1em;
-
-       }
+	}
 }
