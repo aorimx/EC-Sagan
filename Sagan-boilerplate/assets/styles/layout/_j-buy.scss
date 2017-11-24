@@ -12,6 +12,9 @@
 	}
 	.container-name{
 		display: inline-flex;
+		.padd{
+			padding-right: $space-2;
+		}
 		.first-name{
 			width: 45%;
 			margin-right: $space-4;
@@ -20,7 +23,13 @@
 			width: 45%;
 		}
 	}
-
+	.container-payment{
+		display: inline-flex;
+		width: 100%;
+		.padd{
+			padding-right: $space-2;
+		}
+	}
 		.container-address{
 			display: inline-flex;
 		.form-address{
@@ -80,6 +89,9 @@
 						opacity: 0;
 					}
 				}
+			}
+			.billing-container{
+				display: none;
 			}
 	@media screen and (max-width: 768px){
 		.container-name{

@@ -768,11 +768,18 @@ header.main-nav.responsive {
     font-weight: bold; }
   .container-form .container-name {
     display: inline-flex; }
+    .container-form .container-name .padd {
+      padding-right: 16px; }
     .container-form .container-name .first-name {
       width: 45%;
       margin-right: 32px; }
     .container-form .container-name .last-name {
       width: 45%; }
+  .container-form .container-payment {
+    display: inline-flex;
+    width: 100%; }
+    .container-form .container-payment .padd {
+      padding-right: 16px; }
   .container-form .container-address {
     display: inline-flex; }
     .container-form .container-address .form-address {
@@ -815,6 +822,8 @@ header.main-nav.responsive {
       width: 30%; }
       .container-form .container-gift .btn-giftcard label {
         opacity: 0; }
+  .container-form .billing-container {
+    display: none; }
   @media screen and (max-width: 768px) {
     .container-form .container-name {
       display: flex;
