@@ -1,15 +1,19 @@
+.spacebottom{
+	padding-bottom: $space-2;
+}
 .content-summary{
 	background-color: #DADADA;
 	padding-left: $space-2;
+	padding-right: $space-2;
 	margin-top: $space-4;
 	padding-top: $space-2;
+	position: sticky;
+	top: 80px;
 	.spTotal{
 		color:black;
 	}
 	.content{
-		padding-right: $space-2;
-		width: 100%;
-		text-align: right;
+	width: 100%;
 	}
 }
 .flexx{
