@@ -762,6 +762,10 @@ header.main-nav.responsive {
     display: none; } }
 .container-form {
   margin-top: 16px; }
+  .container-form .step a {
+    color: #000000; }
+  .container-form .step .step1 a:hover {
+    font-weight: bold; }
   .container-form .container-name {
     display: inline-flex; }
     .container-form .container-name .first-name {
@@ -798,6 +802,19 @@ header.main-nav.responsive {
     display: inline-flex; }
     .container-form .form-phone .phone {
       width: 45%; }
+  .container-form .container-gift {
+    width: 100%;
+    display: inline-flex; }
+    .container-form .container-gift .gift-certificate {
+      width: 40%;
+      margin-right: 16px; }
+    .container-form .container-gift .pin-number {
+      width: 20%;
+      margin-right: 16px; }
+    .container-form .container-gift .btn-giftcard {
+      width: 30%; }
+      .container-form .container-gift .btn-giftcard label {
+        opacity: 0; }
   @media screen and (max-width: 768px) {
     .container-form .container-name {
       display: flex;
@@ -1384,7 +1401,7 @@ input[type=tel],
 input[type=url],
 input[type=password],
 textarea, select {
-  min-width: 160px;
+  min-width: 80px;
   width: 100%;
   height: 48px;
   background-color: transparent;
