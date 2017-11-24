@@ -614,7 +614,7 @@ header.main-nav.responsive {
     display: inline-flex;
     flex-wrap: wrap; }
     .in-stock .status {
-      padding-left: 32px; } }
+      margin-left: 16px; } }
 .container-descripcion {
   margin-right: 32px; }
 
@@ -759,12 +759,29 @@ header.main-nav.responsive {
 .container-form {
   margin-top: 16px; }
   .container-form .container-name {
-    display: inline-flex;
-    justify-content: space-between; }
+    display: inline-flex; }
+    .container-form .container-name .first-name {
+      width: 45%;
+      margin-right: 32px; }
+    .container-form .container-name .last-name {
+      width: 45%; }
+  .container-form .container-address {
+    display: inline-flex; }
+    .container-form .container-address .form-address {
+      width: 45%;
+      margin-right: 32px; }
+    .container-form .container-address .form-address2 {
+      width: 45%; }
   .container-form .container-city {
     display: inline-flex; }
-    .container-form .container-city .space-der {
-      padding-right: 32px; }
+    .container-form .container-city .zip {
+      width: 30%;
+      margin-right: 16px; }
+    .container-form .container-city .city {
+      width: 30%;
+      margin-right: 16px; }
+    .container-form .container-city .state {
+      width: 30%; }
   .container-form .step {
     display: inline-flex; }
     .container-form .step .step1 {
@@ -773,23 +790,40 @@ header.main-nav.responsive {
       padding-right: 32px; }
     .container-form .step .step3 {
       padding-right: 32px; }
-  .container-form .form-address {
-    width: 50%; }
   .container-form .form-phone {
-    width: 50%; }
+    display: inline-flex; }
+    .container-form .form-phone .phone {
+      width: 45%; }
   @media screen and (max-width: 768px) {
     .container-form .container-name {
       display: flex;
       flex-direction: column; }
       .container-form .container-name .first-name {
-        padding-right: 0; }
+        padding-right: 0;
+        width: 100%; }
+      .container-form .container-name .last-name {
+        width: 100%; }
     .container-form .container-city {
       display: flex;
       flex-direction: column; }
-    .container-form .form-address {
-      width: 100%; }
+      .container-form .container-city .zip {
+        width: 100%; }
+      .container-form .container-city .city {
+        width: 100%; }
+      .container-form .container-city .state {
+        width: 100%; }
+    .container-form .container-address {
+      display: flex;
+      flex-direction: column; }
+      .container-form .container-address .form-address {
+        width: 100%; }
+      .container-form .container-address .form-address2 {
+        width: 100%; }
     .container-form .form-phone {
-      width: 100%; } }
+      display: flex;
+      flex-direction: column; }
+      .container-form .form-phone .phone {
+        width: 100%; } }
 
 .container-summary {
   margin-top: 24px;
@@ -1328,10 +1362,9 @@ button, .btn-solid {
 form {
   max-width: 200;
   font-weight: 100%;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 8px; }
-  form fieldset {
-    display: flex;
-    flex-direction: column; }
 
 label {
   margin-bottom: 8px;

@@ -71,8 +71,7 @@
           </div>
           <hr>
           <form>
-                <fieldset>
-                    <h2>Sopping address</h2>
+                    <h2>Shipping address</h2>
                     <!-- Text input -->
                     <div class="container-name">
                     <div class="first-name">
@@ -86,21 +85,27 @@
                     </div>
                     </div>
                     <!-- Adress -->
-                    <div class="form-address">
-                    <label>Address </label>
-                    <input type="text">
+                    <div class="container-address">
+                      <div class="form-address">
+                        <label>Address </label>
+                        <input type="text">
+                      </div>
+                      <div class="form-address2">
+                        <label>Address 2</label>
+                        <input type="text">
+                      </div>
                     </div>
                     <!-- CODE -->
                     <div class="container-city">
-                    <div class="space-der">
+                    <div class="zip">
                     <label>ZIP code</label>
                     <input type="text">
                     </div>
-                    <div class="space-der">
+                    <div class="city">
                     <label>City</label>
                     <input type="text">
                     </div>
-                    <div>
+                    <div class="state">
                     <label>State</label>
                     <select>
                       <option>Option 01</option>
@@ -109,15 +114,17 @@
                     </div>
                     </div>
                     <!-- File input -->
-                    <div class="form-phone">
                     <label>Phone</label>
-                    <input type="text">
-                    </div>
-                     <!-- Checkbox with label  -->
+                    <div class="form-phone">
+                      <div class="phone">
+                        <input type="text">
+                      </div>
+                      <div class="checkbox">
                     <label>
                         <input type="checkbox"> <b>Use this address for Billing</b>
                     </label>
-                </fieldset>
+                  </div>
+                    </div>
             </form>
         </div>
         <div class="unit percent-30">
