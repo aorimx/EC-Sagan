@@ -1,5 +1,15 @@
 .container-form{
 	margin-top: $space-2;
+	.step{
+		a{
+			color: $black;
+		}
+		.step1{
+			a:hover{
+				font-weight: bold;
+			}
+		}
+	}
 	.container-name{
 		display: inline-flex;
 		.first-name{
@@ -53,6 +63,24 @@
 				width: 45%;
 			}
 		}
+			.container-gift{
+				width: 100%;
+				display: inline-flex;
+				.gift-certificate{
+					width: 40%;
+					margin-right: $space-2;
+				}
+				.pin-number{
+					width: 20%;
+					margin-right: $space-2;
+				}
+				.btn-giftcard{
+					width: 30%;
+					label{
+						opacity: 0;
+					}
+				}
+			}
 	@media screen and (max-width: 768px){
 		.container-name{
 			display: flex;
@@ -95,7 +123,9 @@
 			width: 100%;
 			}
 		}
+
 }
+
 }
 .container-summary{
 	margin-top: $space-3;
