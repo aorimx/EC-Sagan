@@ -76,6 +76,7 @@
             </div>
           </div>
           <hr>
+         <div id='ocultar'>
           <form>
                     <h2>Shipping address</h2>
                     <!-- Text input -->
@@ -132,6 +133,8 @@
                   </div>
                     </div>
             </form>
+          </div>
+            <div class="billig-container" id='oculto'>
             <div class="billing-address">
             <form>
               <h2>Billing address</h2>
@@ -162,6 +165,7 @@
             </div>
           </div>
         </div>
+        </div>
         <div class="unit percent-30">
           <div class="content-summary">
               <H3>Order summary</H3>
@@ -188,7 +192,7 @@
                 </tr>
               </table>
               <div class="content">
-                <button onclick="cambiar_container()">Continue to billing</button>
+                <button value="Mostrar" onclick="mostrar()">Continue to billing</button>
               </div>
             </div> 
         </div>
@@ -203,7 +207,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="assets/scripts/ripple.js"></script>
   <script src="assets/scripts/header.js"></script>
-  <script src="assets/scripts/cambio-containers.js"></script>
-
+  <script src="assets/scripts/cambio-container.js"></script>
 </body>
 </html>
