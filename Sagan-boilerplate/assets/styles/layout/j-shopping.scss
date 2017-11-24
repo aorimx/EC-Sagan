@@ -17,6 +17,7 @@
 	}
 }
 .flexx{
+	padding-left: 8px;
 	display: inline-flex;
 	flex-wrap: wrap;
 	width: 100%;
@@ -55,7 +56,7 @@
            position: absolute;
        }
        tr td:nth-child(4) {
-       	padding-left: 88px;
+       	padding-left: 70px;
        	display: inline-flex;
        }
        tr td:nth-child(5) {
@@ -68,6 +69,7 @@
            content: attr(data-th);
        }
        .flexx{
+       	width: 100%;
 	       	.nonn{
 	       		display: block;
 	       		padding-left: $space-3;
