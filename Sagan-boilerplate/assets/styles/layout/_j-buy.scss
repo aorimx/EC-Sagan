@@ -144,9 +144,22 @@
 			width: 100%;
 			}
 		}
-
 }
-
+	.container-title-gift{
+	.container-gift{
+		display: flex;
+    	flex-direction: column;
+		.gift-certificate{
+			width: 100%;
+		}
+		.pin-number{
+			width: 100%;
+		}
+		.btn-giftcard{
+			width: 100%;
+		}
+	}
+}
 }
 .container-summary{
 	margin-top: $space-3;

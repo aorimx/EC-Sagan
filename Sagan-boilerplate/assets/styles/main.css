@@ -537,30 +537,41 @@ header.main-nav.responsive {
         .grid .unit.percent-30 {
           width: 100%;
           padding-right: 0; } }
-    .grid .unit.five {
+    .grid .unit.percent-45 {
       width: 45%;
       padding-right: 16px; }
-      .grid .unit.five:last-child {
+      .grid .unit.percent-45:last-child {
         padding-right: 0; }
       @media screen and (max-width: 768px) {
-        .grid .unit.five {
+        .grid .unit.percent-45 {
           width: 100%;
           padding-right: 0; } }
-    .grid .unit.six {
+    .grid .unit.tenth {
       width: 10%;
       padding-right: 16px; }
-      .grid .unit.six:last-child {
+      .grid .unit.tenth:last-child {
         padding-right: 0; }
       @media screen and (max-width: 768px) {
-        .grid .unit.six {
+        .grid .unit.tenth {
           width: 100%;
           padding-right: 0;
-          padding-left: 24px; }
-          .grid .unit.six img {
-            display: none; } }
+          padding-left: 24px; } }
 
-.container-product {
-  padding-left: 16px; }
+.thumbnail-img img {
+  width: 64px; }
+
+.container-img-product {
+  padding-right: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  width: 1200px;
+  padding: 16px;
+  background-color: rgba(255, 0, 0, 0.3); }
+  .container-img-product img {
+    max-height: 100%;
+    margin-bottom: 0; }
 
 .img-big:hover {
   -moz-transform: scale(1.1);
@@ -569,51 +580,60 @@ header.main-nav.responsive {
   -ms-transform: scale(1.1);
   transform: scale(1.1); }
 
-.add-cart input {
-  max-width: 64px;
-  margin-right: 16px;
-  border: solid 1px #d9d9d9;
-  padding-left: 24px; }
-
-.add-commentary {
-  display: inline-flex; }
-  .add-commentary p {
-    font-size: 16px; }
-  .add-commentary img {
-    max-height: 24px; }
-
-.cost {
-  display: inline-flex; }
-  .cost input {
-    display: none; }
-  .cost .new-cost p {
-    color: #4caf50;
-    padding-right: 32px; }
-  .cost .old-cost p {
-    padding-right: 32px;
-    text-decoration: line-through;
-    color: #f44336; }
-
-@media screen and (max-width: 970px) {
-  .cost input {
-    display: block;
+.container-product {
+  padding-left: 16px; }
+  .container-product .add-cart input {
     max-width: 64px;
-    max-height: 24px;
-    margin-right: 0;
+    margin-right: 16px;
     border: solid 1px #d9d9d9;
     padding-left: 24px; }
+  .container-product .cost {
+    display: inline-flex; }
+    .container-product .cost input {
+      display: none; }
+    .container-product .cost .new-cost p {
+      color: #4caf50;
+      padding-right: 32px; }
+    .container-product .cost .old-cost p {
+      padding-right: 32px;
+      text-decoration: line-through;
+      color: #f44336; }
+  .container-product .product-messages {
+    display: inline-flex; }
+    .container-product .product-messages p {
+      font-size: 16px; }
+    .container-product .product-messages img {
+      max-width: 32px;
+      max-height: 24px;
+      padding-right: 8px; }
+  .container-product .opcions .container-img-sm {
+    display: inline-flex; }
+    .container-product .opcions .container-img-sm .thumbnail-img-sm img {
+      max-width: 32px;
+      padding-right: 8px; }
+  @media screen and (max-width: 970px) {
+    .container-product .cost input {
+      display: block;
+      max-width: 64px;
+      max-height: 24px;
+      margin-right: 0;
+      border: solid 1px #d9d9d9;
+      padding-left: 24px; }
+    .container-product .add-cart input {
+      display: none; } }
 
-  .add-cart input {
-    display: none; } }
 @media screen and (max-width: 768px) {
+  .thumbnail-img img {
+    display: none; }
+
   .container-product {
     padding-left: 0; }
 
-  .in-stock {
+  .availability-msg {
     width: 100%;
     display: inline-flex;
     flex-wrap: wrap; }
-    .in-stock .status {
+    .availability-msg .status {
       margin-left: 16px; } }
 .container-descripcion {
   margin-right: 32px; }
@@ -865,6 +885,15 @@ header.main-nav.responsive {
       flex-direction: column; }
       .container-form .form-phone .phone {
         width: 100%; } }
+  .container-form .container-title-gift .container-gift {
+    display: flex;
+    flex-direction: column; }
+    .container-form .container-title-gift .container-gift .gift-certificate {
+      width: 100%; }
+    .container-form .container-title-gift .container-gift .pin-number {
+      width: 100%; }
+    .container-form .container-title-gift .container-gift .btn-giftcard {
+      width: 100%; }
 
 .container-summary {
   margin-top: 24px;
