@@ -1,6 +1,3 @@
-.spacebottom{
-	padding-bottom: $space-2;
-}
 .content-summary{
 	background-color: #DADADA;
 	padding-left: $space-2;
@@ -9,77 +6,85 @@
 	padding-top: $space-2;
 	position: sticky;
 	top: 80px;
-	.spTotal{
+	.Total{
 		color:black;
 	}
-	.content{
-	width: 100%;
+	.paypal{
+		background-color: yellow;
 	}
 }
-.flexx{
-	padding-left: 8px;
+.general_content_help{
+	padding: $space-2;
+	.help_content{
+		text-align: center;
+		padding: $space-2;
+	}	
+}
+.text-decoration{
+		&.underline{
+			text-decoration: underline;
+		}
+	}
+.qty_content{
 	display: inline-flex;
 	flex-wrap: wrap;
 	width: 100%;
-	.nonn{
+	.order-summary{
+		width:48px;
+	}
+	.hide_element{
 		display: none;
 	}
-	.widthh{
+	p{
+		padding-top: $space-2;
 		width: 100%;
 	}
 }
 @media screen and (max-width: 768px) {
-    .content-summary{
-		padding-right: $space-2;
-		.content{
-			padding-right: 0;
-		}
-	}
 }
 @media screen and (max-width: 600px) {
 	table img {
-		width: 64px;
+		width: $space-8;
 	}
 	table {
-           width:100%;
-       }
-       thead {
-           display: none;
-       }
-       tr td:first-child {
-           position: absolute;
-       }
-       tr td:nth-child(2) {
-           padding-left: 88px;
-       }
-       tr td:nth-child(3) {
-           position: absolute;
-       }
-       tr td:nth-child(4) {
-       	padding-left: 70px;
-       	display: inline-flex;
-       }
-       tr td:nth-child(5) {
-       }
-       tbody td {
-           display: block;
-           text-align:center;
-       }
-       tbody td:before {
-           content: attr(data-th);
-       }
-       .flexx{
-       	width: 100%;
-	       	.nonn{
-	       		display: block;
-	       		padding-left: $space-3;
-	       		font-size: $space-2;
-	       	}
-	       	.widthh{
-	       		width: 50%;
-	       	}
-       }
-       .nonnone{
-       		display: none;
-       }
+    width:100%;
+  }
+  thead {
+    display: none;
+  }
+  tr td:first-child {
+    position: absolute;
+  }
+  tr td:nth-child(2) {
+    padding-left: $space-11;
+  }
+  tr td:nth-child(3) {
+    position: absolute;
+  }
+  tr td:nth-child(4) {
+   	padding-left: $space-9;
+   	display: inline-flex;
+  }
+  tbody td {
+    display: block;
+    text-align:center;
+  }
+  tbody td:before {
+    content: attr(data-th);
+  }
+  .qty_content{
+   	width: 100%;
+   	padding-left:$space-base;
+	 	.hide_element{
+	 		display: block;
+	 		padding-left: $space-2;
+	 		font-size: $space-2;
+	 	}
+	 	p{
+	 		width: 50%;
+	 	}
+  }
+  .hide_element_responsive{
+  	display: none;
+  }
 }
