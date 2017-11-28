@@ -783,128 +783,68 @@ header.main-nav.responsive {
 
   .nonnone {
     display: none; } }
+.padd-between {
+  margin-right: 16px; }
+
+.padd-between-md {
+  margin-right: 8px; }
+
+.margin-between {
+  margin-right: 32px; }
+
 .container-form {
   margin-top: 16px; }
-  .container-form .step a {
-    color: #000000; }
-  .container-form .container-name {
-    display: inline-flex; }
-    .container-form .container-name .padd {
-      padding-right: 16px; }
-    .container-form .container-name .first-name {
-      width: 45%;
-      margin-right: 32px; }
-    .container-form .container-name .last-name {
-      width: 45%; }
-  .container-form .container-payment {
-    display: inline-flex;
-    width: 100%; }
-    .container-form .container-payment .padd {
-      padding-right: 16px; }
-  .container-form .container-address {
-    display: inline-flex; }
-    .container-form .container-address .form-address {
-      width: 45%;
-      margin-right: 32px; }
-    .container-form .container-address .form-address2 {
-      width: 45%; }
-  .container-form .container-city {
-    display: inline-flex; }
-    .container-form .container-city .zip {
-      width: 30%;
-      margin-right: 16px; }
-    .container-form .container-city .city {
-      width: 30%;
-      margin-right: 16px; }
-    .container-form .container-city .state {
-      width: 30%; }
   .container-form .step {
     display: inline-flex; }
+    .container-form .step a {
+      color: #000000; }
     .container-form .step .step1 {
-      padding-right: 32px; }
-    .container-form .step .step2 {
-      padding-right: 32px; }
-    .container-form .step .step3 {
-      padding-right: 32px; }
-  .container-form .form-phone {
-    display: inline-flex; }
-    .container-form .form-phone .phone {
-      width: 45%; }
-  .container-form .container-gift {
+      font-weight: bold; }
+  .container-form .inline-elements {
     width: 100%;
     display: inline-flex; }
-    .container-form .container-gift .gift-certificate {
-      width: 40%;
-      margin-right: 16px; }
-    .container-form .container-gift .pin-number {
-      width: 20%;
-      margin-right: 16px; }
-    .container-form .container-gift .btn-giftcard {
+    .container-form .inline-elements .inputsize.xl {
+      width: 100%; }
+    .container-form .inline-elements .inputsize.gd {
+      width: 45%; }
+    .container-form .inline-elements .inputsize.md {
+      width: 40%; }
+    .container-form .inline-elements .inputsize.sm {
       width: 30%; }
-      .container-form .container-gift .btn-giftcard .lbl-oculto {
-        opacity: 0; }
-  .container-form .billig-container {
-    display: none; }
+    .container-form .inline-elements .inputsize.xs {
+      width: 20%; }
   .container-form .lbl-oculto {
     opacity: 0; }
-  .container-form .step1 {
-    font-weight: bold; }
+  .container-form .billig-container {
+    display: none; }
+    .container-form .billig-container .mail {
+      width: 50%; }
+      @media screen and (max-width: 768px) {
+        .container-form .billig-container .mail {
+          width: 100%; } }
+  .container-form .gift {
+    display: none; }
   .container-form .container-title {
     width: 100%;
     display: inline-flex;
     justify-content: space-between; }
     .container-form .container-title img {
       max-height: 16px; }
+  .container-form .inline-img {
+    width: 100%;
+    display: inline-flex; }
   @media screen and (max-width: 768px) {
-    .container-form .container-name {
+    .container-form .inline-elements {
       display: flex;
       flex-direction: column; }
-      .container-form .container-name .first-name {
-        padding-right: 0;
+      .container-form .inline-elements .inputsize.gd {
         width: 100%; }
-      .container-form .container-name .last-name {
+      .container-form .inline-elements .inputsize.md {
         width: 100%; }
-    .container-form .container-city {
-      display: flex;
-      flex-direction: column; }
-      .container-form .container-city .zip {
+      .container-form .inline-elements .inputsize.sm {
         width: 100%; }
-      .container-form .container-city .city {
-        width: 100%; }
-      .container-form .container-city .state {
-        width: 100%; }
-    .container-form .container-address {
-      display: flex;
-      flex-direction: column; }
-      .container-form .container-address .form-address {
-        width: 100%; }
-      .container-form .container-address .form-address2 {
-        width: 100%; }
-    .container-form .form-phone {
-      display: flex;
-      flex-direction: column; }
-      .container-form .form-phone .phone {
+      .container-form .inline-elements .inputsize.xs {
         width: 100%; } }
-  .container-form .container-title-gift .container-gift {
-    display: flex;
-    flex-direction: column; }
-    .container-form .container-title-gift .container-gift .gift-certificate {
-      width: 100%; }
-    .container-form .container-title-gift .container-gift .pin-number {
-      width: 100%; }
-    .container-form .container-title-gift .container-gift .btn-giftcard {
-      width: 100%; }
-
-.container-summary {
-  margin-top: 24px;
-  background: #f2f2f2;
-  max-height: 250px;
-  padding-left: 16px; }
-  .container-summary .btn-center {
-    padding: 8px; }
-  @media screen and (max-width: 900px) {
-    .container-summary {
-      padding-left: 0; } }
 
 .bkt-strengths {
   padding: 64px;

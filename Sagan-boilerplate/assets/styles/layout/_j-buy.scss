@@ -1,179 +1,89 @@
+	.padd-between{
+		margin-right: $space-2;
+	}
+	.padd-between-md{
+		margin-right: $space-base;
+	}
+	.margin-between{
+		margin-right: $space-4;
+	}
 .container-form{
 	margin-top: $space-2;
 	.step{
 		a{
 			color: $black;
 		}
-	}
-	.container-name{
 		display: inline-flex;
-		.padd{
-			padding-right: $space-2;
-		}
-		.first-name{
-			width: 45%;
-			margin-right: $space-4;
-		}
-		.last-name{
-			width: 45%;
+		.step1{
+			font-weight: bold;
 		}
 	}
-	.container-payment{
-		display: inline-flex;
+	.inline-elements{
 		width: 100%;
-		.padd{
-			padding-right: $space-2;
-		}
-	}
-		.container-address{
-			display: inline-flex;
-		.form-address{
-			width: 45%;
-			margin-right: $space-4;
-		}
-		.form-address2{
-			width: 45%;
-		}
-		}
-		.container-city{
 		display: inline-flex;
-		.zip{
-				width: 30%;
-				margin-right: $space-2;
+		.inputsize{
+			&.xl{
+				width: 100%;
 			}
-		.city{
-				width: 30%;
-				margin-right: $space-2;
-			}
-		.state{
-			width: 30%;
-		}	
-	}
-		.step{
-		display: inline-flex;
-			.step1 {
-				padding-right: $space-4;	
-			}
-			.step2 {
-				padding-right: $space-4;	
-			}
-			.step3 {
-				padding-right: $space-4;	
-			}	
-		}
-		.form-phone{
-			display: inline-flex;
-			.phone{
+			&.gd{
 				width: 45%;
 			}
+			&.md{
+				width: 40%;
+			}
+			&.sm{
+				width: 30%;
+			}
+			&.xs{
+				width: 20%;
+			}
 		}
-			.container-gift{
-				width: 100%;
-				display: inline-flex;
-				.gift-certificate{
-					width: 40%;
-					margin-right: $space-2;
-				}
-				.pin-number{
-					width: 20%;
-					margin-right: $space-2;
-				}
-				.btn-giftcard{
-					width: 30%;
-					.lbl-oculto{
-						opacity: 0;
-					}
-				}
-			}
-			.billig-container{
-				display: none;
-			}
-			.lbl-oculto{
-						opacity: 0;
-					}
-			.step1{
-			font-weight: bold;
-			}
-			.container-title{
-				width: 100%;
-				display: inline-flex;
-				justify-content: space-between;
-				img{
-					max-height: $space-2;
-				}
-			}	
+	}
+	.lbl-oculto{
+		opacity: 0;
+	}
+	.billig-container{
+		display: none;
+		.mail{
+		 width: 50%;
+		 @media screen and (max-width: 768px){
+		 	width: 100%;
+		 }
+		}
+	}
+	.gift{
+			display: none;
+		}
+	.container-title{
+		width: 100%;
+		display: inline-flex;
+		justify-content: space-between;
+		img{
+			max-height: $space-2;
+		}
+	}
+	.inline-img{
+		width: 100%;
+		display: inline-flex;
+	}	
 	@media screen and (max-width: 768px){
-		.container-name{
-			display: flex;
-    		flex-direction: column;
-    		.first-name{
-    			padding-right: 0;
-    			width: 100%;
-    		}
-  			.last-name{
-  				width: 100%;
-  			}
-  }	
-  		.container-city{
+	.inline-elements{
   			display: flex;
     		flex-direction: column;
-    		.zip{
-    			width: 100%;
-    		}
-    		.city{
-    			width: 100%;
-    		}
-    		.state{
-    			width: 100%;
-    		}
-  		}
-  		.container-address{
-  			display: flex;
-    		flex-direction: column;
-  		.form-address{
-			width: 100%;
-		}
-		.form-address2{
-			width: 100%;
-		}
-	}
-		.form-phone{
-			display: flex;
-    		flex-direction: column;
-			.phone{
-			width: 100%;
+    		.inputsize{
+			&.gd{
+				width: 100%;
+			}
+			&.md{
+				width: 100%;
+			}
+			&.sm{
+				width: 100%;
+			}
+			&.xs{
+				width: 100%;
 			}
 		}
-}
-	.container-title-gift{
-	.container-gift{
-		display: flex;
-    	flex-direction: column;
-		.gift-certificate{
-			width: 100%;
-		}
-		.pin-number{
-			width: 100%;
-		}
-		.btn-giftcard{
-			width: 100%;
-		}
 	}
 }
 }
-.container-summary{
-	margin-top: $space-3;
-	background: $gray-ghost;
-	max-height:  250px;
-	padding-left: $space-2;
-	.btn-center{
-		padding: $space-base;
-	}
-	@media screen and (max-width: $tablet){
-		
-    padding-left: 0;
-  }
-	}
-
-
-
