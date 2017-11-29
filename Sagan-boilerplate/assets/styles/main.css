@@ -822,7 +822,19 @@ header.main-nav.responsive {
       @media screen and (max-width: 768px) {
         .container-form .billig-container .mail {
           width: 100%; } }
-  .container-form .gift {
+  .container-form .gift-ocultar {
+    display: none; }
+  .container-form .gift-mostrar {
+    display: inline-flex; }
+  .container-form .membership-ocultar {
+    width: 100%;
+    display: none; }
+  .container-form .membership-mostrar {
+    width: 100%;
+    display: inline-flex; }
+    .container-form .membership-mostrar .inputsize.gd {
+      width: 40%; }
+  .container-form .img-oculta {
     display: none; }
   .container-form .container-title {
     width: 100%;
@@ -844,6 +856,15 @@ header.main-nav.responsive {
       .container-form .inline-elements .inputsize.sm {
         width: 100%; }
       .container-form .inline-elements .inputsize.xs {
+        width: 100%; }
+    .container-form .gift-mostrar {
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+    .container-form .membership-mostrar {
+      display: flex;
+      flex-direction: column; }
+      .container-form .membership-mostrar .inputsize.gd {
         width: 100%; } }
 
 .bkt-strengths {

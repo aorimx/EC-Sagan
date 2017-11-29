@@ -51,7 +51,26 @@
 		 }
 		}
 	}
-	.gift{
+	.gift-ocultar{
+			display: none;
+		}
+		.gift-mostrar{
+			display: inline-flex;
+		}
+		.membership-ocultar{
+			width: 100%;
+			display: none;
+		}
+		.membership-mostrar{
+			width: 100%;
+			display: inline-flex;
+			.inputsize{
+			&.gd{
+				width: 40%;
+			}
+		}
+		}
+		.img-oculta{
 			display: none;
 		}
 	.container-title{
@@ -85,5 +104,18 @@
 			}
 		}
 	}
+	.gift-mostrar{
+			display: flex;
+    		flex-direction: column;
+    		width: 100%;
+		}
+	.membership-mostrar{
+			display: flex;
+    		flex-direction: column;.inputsize{
+			&.gd{
+				width: 100%;
+			}
+		}
+		}	
 }
 }
