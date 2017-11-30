@@ -59,19 +59,19 @@
       <div class="grid">
         <div class="unit percent-70 container-form">
           <div class="step">
-            <div class="step1" id='step1'>
+            <div class="margin-between step1" id='step1'>
               <a href="">
                 <span> 1. Shipping</span>
               </a>
             </div>
-            <div class="step2" id='step2-sel'>
+            <div class="margin-between" id='step2-sel'>
               <a href="">
                 <span> 2. Billing</span>
               </a>
             </div>
-            <div class="step3">
+            <div class="margin-between">
               <a href="">
-                <span> 3.Review </span>
+                <span> 3. Review </span>
               </a>  
             </div>
           </div>
@@ -80,39 +80,39 @@
           <form>
                     <h2>Shipping address</h2>
                     <!-- Text input -->
-                    <div class="container-name">
-                    <div class="first-name">
+                    <div class="container-name inline-elements">
+                    <div class="inputsize gd padd-between">
                     <label for="text">First Name</label>
                     <input id="text" type="text">
                     </div>
                     <!-- Last name -->
-                    <div class="last-name">
+                    <div class="inputsize gd">
                     <label>Last Name</label>
                     <input type="text">
                     </div>
                     </div>
                     <!-- Adress -->
-                    <div class="container-address">
-                      <div class="form-address">
+                    <div class="container-address inline-elements">
+                      <div class="inputsize gd padd-between">
                         <label>Address </label>
                         <input type="text">
                       </div>
-                      <div class="form-address2">
+                      <div class="inputsize gd">
                         <label>Address 2</label>
                         <input type="text">
                       </div>
                     </div>
                     <!-- CODE -->
-                    <div class="container-city">
-                    <div class="zip">
+                    <div class="container-city inline-elements">
+                    <div class="inputsize sm padd-between-md">
                     <label>ZIP code </label>
                     <input type="text">
                     </div>
-                    <div class="city">
+                    <div class="inputsize sm padd-between-md">
                     <label>City</label>
                     <input type="text">
                     </div>
-                    <div class="state">
+                    <div class="inputsize sm">
                     <label>State</label>
                     <select>
                       <option>Option 01</option>
@@ -122,8 +122,8 @@
                     </div>
                     <!-- File input -->
                     <label>Phone</label>
-                    <div class="form-phone">
-                      <div class="phone">
+                    <div class="form-phone inline-elements">
+                      <div class="inputsize gd">
                         <input type="text">
                       </div>
                       <div class="checkbox">
@@ -135,7 +135,6 @@
             </form>
           </div>
           <div class="billig-container" id='oculto'>
-            <div class="billing-address">
             <form>
               <h2>Billing address</h2>
                 <label>
@@ -146,51 +145,52 @@
                     <input id="text" type="text">
                     </div>
             </form>
-          </div>
-          <div>
-            <div class="container-title icons-list-inline--sm">
+          <div class="container-gift">
+            <div class="container-title">
             <h2>Gift Cards</h2>
-            <img src="assets/images/logo-suma.png">
+            <img class="img-gift " src="assets/images/logo-suma.png">
+            <img class="img-gift img-oculta" src="assets/images/logo-resta.png">
             </div>
-            <div class="container-gift">
-                    <div class="gift-certificate">
+            <div class="gift-ocultar" id='gift'>
+                    <div class="inputsize sm padd-between-md">
                     <label>Gift Certificate </label>
                     <input type="text">
                     </div>
-                    <div class="pin-number">
+                    <div class="inputsize sm padd-between-md">
                     <label>Pin number</label>
                     <input type="text">
                     </div>
-                    <div class="btn-giftcard">
+                    <div class="inputsize sm">
                     <label class="lbl-oculto">soy invisible wuju</label>
                     <button>Apply</button>
                     </div>
             </div>
           </div>
-          <div>
-            <div class="container-title icons-list-inline--sm">
+          <div >
+            <div class="container-title">
             <h2>MoMA Membership Discount</h2>
-            <img src="assets/images/logo-suma.png">
+            <img class="image-membership" src="assets/images/logo-suma.png">
+            <img class="image-membership img-oculta" src="assets/images/logo-resta.png">
           </div>
-            <div>
-              <div class="grid">
-                <div class="unit half">
+            <div class="gift" id='moma'>
+              <div class="membership-ocultar">
+                <div class="inputsize gd padd-between">
                   <label>First Name</label>
                   <input type="text">
                 </div>
-                <div class="unit half">
+                <div class="inputsize gd padd-between">
                   <label>Last Name</label>
                   <input type="text">
                 </div>
               </div>
-              <div class="grid">
-                <div class="unit half">
+              <div class="membership-ocultar">
+                <div class="inputsize gd padd-between">
                   <label>MoMA Membership Number</label>
                   <input type="text">
                 </div>
-                <div class="unit half">
+                <div class="inputsize sm">
                   <label class="nonn lbl-oculto">sere invisible</label>
-                  <div class="unit half">
+                  <div class="">
                     <button>Apply Discount</button>
                   </div>
                 </div>
@@ -199,47 +199,37 @@
             <div>
               <h2>Payment Method</h2>
               <div>
-                <div class="grid">
-                  <div class="unit third">
-                    <div class="container-payment">
-                      <label class="padd">Credit Card</label>
+                    <div class="inline-elements">
+                      <label class="padd-between">Credit Card</label>
                       <label>Secured with SSL</label>
                     </div>
-                    <div class="container-payment">
-                      <img class="padd" src="https://dummyimage.com/60x40/000/fff" alt="">
-                      <img class="padd" src="https://dummyimage.com/60x40/000/fff" alt="">
-                      <img class="padd" src="https://dummyimage.com/60x40/000/fff" alt="">
+                    <div class="inline-img">
+                      <img class="padd-between" src="https://dummyimage.com/60x40/000/fff" alt="">
+                      <img class="padd-between" src="https://dummyimage.com/60x40/000/fff" alt="">
+                      <img class="padd-between" src="https://dummyimage.com/60x40/000/fff" alt="">
                     </div>
-                  </div>
-                  <div class="unit third">
-                  </div>
-                  <div class="unit third">
-                  </div>
-                </div>
-                <div class="grid">
-                  <div class="unit half">
+                <div class="inline-elements">
+                  <div class="inputsize gd padd-between">
                     <label>Name on Card</label>
                     <input type="text">
                   </div>
-                  <div class="unit half">
+                  <div class="inputsize gd">
                     <label>Card Number</label>
                     <input type="text">
                   </div>
                 </div>
-                <div class="grid">
-                  <div class="unit third">
+                <div class="inline-elements">
+                  <div class="inputsize xs padd-between">
                     <label>Expiration Day</label>
                     <input type="text" placeholder="MM/YY">
                   </div>
-                  <div class="unit third">
+                  <div class="inputsize xs">
                     <label>CW</label>
                     <input type="text">
                   </div>
-                  <div class="unit third">
-                  </div>
                 </div>
-                <div class="container-payment">
-                  <label class="padd">OR</label>
+                <div class="inline-elements">
+                  <label class="inputsize xs">OR</label>
                   <button>PayPal Check out</button>
                 </div>
               </div>
@@ -287,6 +277,8 @@
   <script src="assets/scripts/ripple.js"></script>
   <script src="assets/scripts/header.js"></script>
   <script src="assets/scripts/cambio-container.js"></script>
+  <script src="assets/scripts/jquery-3.2.0.min.js"></script>
+  <script src="assets/scripts/logo-change.js"></script>
 
 </body>
 </html>
