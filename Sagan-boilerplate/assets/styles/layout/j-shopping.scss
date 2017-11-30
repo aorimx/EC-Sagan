@@ -25,6 +25,14 @@
 			text-decoration: underline;
 		}
 	}
+a:link{ 
+color: #000000; 
+font: bold 1em/1.7em "Trebuchet MS", Arial, Helvetica, serif; 
+} 
+a:visited{ 
+color: #000000; 
+font: bold 1em/1.7em "Trebuchet MS", Arial, Helvetica, serif; 
+} 
 .qty_content{
 	display: inline-flex;
 	flex-wrap: wrap;
