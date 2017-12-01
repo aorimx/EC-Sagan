@@ -1278,7 +1278,6 @@ header.main-nav.responsive {
   justify-content: center;
   align-items: center;
   height: 350px;
-  width: 1200px;
   padding: 16px;
   background-color: rgba(255, 0, 0, 0.3); }
   .container-img-product img {
@@ -1299,14 +1298,20 @@ header.main-nav.responsive {
     margin-right: 16px;
     border: solid 1px #d9d9d9;
     padding-left: 24px; }
+  .container-product .price.gd {
+    font-size: 24px; }
+  .container-product .price.md {
+    font-size: 16px; }
+  .container-product .price.sm {
+    font-size: 8px; }
   .container-product .cost {
     display: inline-flex; }
     .container-product .cost input {
       display: none; }
-    .container-product .cost .new-cost p {
+    .container-product .cost .new-cost {
       color: #4caf50;
       padding-right: 32px; }
-    .container-product .cost .old-cost p {
+    .container-product .cost .old-cost {
       padding-right: 32px;
       text-decoration: line-through;
       color: #f44336; }
@@ -1327,7 +1332,7 @@ header.main-nav.responsive {
     .container-product .cost input {
       display: block;
       max-width: 64px;
-      max-height: 24px;
+      max-height: 32px;
       margin-right: 0;
       border: solid 1px #d9d9d9;
       padding-left: 24px; }

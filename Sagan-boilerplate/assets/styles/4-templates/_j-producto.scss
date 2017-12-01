@@ -10,7 +10,6 @@ $img-sm: 64px;
  justify-content: center;
  align-items: center;
  height: 350px;
- width: 1200px;
  padding: $space-2;
  background-color: rgba(red, .3);
  img {
@@ -35,23 +34,30 @@ transform: scale(1.1)
   padding-left: $space-3;
   }
 }
+.price{
+  &.gd{
+    font-size: $space-3;
+  }
+  &.md{
+    font-size: $space-2;
+  }
+  &.sm{
+    font-size: $space-base;
+  }
+}
 .cost{
   display: inline-flex;
   input{
     display: none;
   }
   .new-cost{
-  p{
   color: $color-success;
   padding-right: $space-4;
 }
-}
 .old-cost{
-  p{
   padding-right: $space-4;
   text-decoration:line-through;
   color: $color-danger;
-  }
 }
 }
 .product-messages{
@@ -81,7 +87,7 @@ transform: scale(1.1)
       input{
         display: block;
         max-width: $space-8;
-        max-height: $space-3;
+        max-height: $space-4;
         margin-right: 0;
         border: solid 1px $gray-lighter;
         padding-left: $space-3;
