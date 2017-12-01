@@ -1021,6 +1021,14 @@ img {
     max-width: 33%;
     margin-right: 16px; }
 
+a:link {
+  color: #000000;
+  font: bold 1em/1.7em "Trebuchet MS", Arial, Helvetica, serif; }
+
+a:visited {
+  color: #000000;
+  font: bold 1em/1.7em "Trebuchet MS", Arial, Helvetica, serif; }
+
 footer {
   background-color: #595959; }
   footer .j-wrap {
@@ -1660,19 +1668,11 @@ header.main-nav.responsive {
 .text-decoration.underline {
   text-decoration: underline; }
 
-a:link {
-  color: #000000;
-  font: bold 1em/1.7em "Trebuchet MS", Arial, Helvetica, serif; }
-
-a:visited {
-  color: #000000;
-  font: bold 1em/1.7em "Trebuchet MS", Arial, Helvetica, serif; }
-
 .qty_content {
   display: inline-flex;
   flex-wrap: wrap;
   width: 100%; }
-  .qty_content .order-summary {
+  .qty_content input {
     width: 48px; }
   .qty_content .hide_element {
     display: none; }
