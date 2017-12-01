@@ -4,6 +4,17 @@ $img-sm: 64px;
     width: $img-sm;
   }
 }
+.price{
+  &.gd{
+    font-size: $space-3;
+  }
+  &.md{
+    font-size: $space-2;
+  }
+  &.sm{
+    font-size: $space-base;
+  }
+}
 .container-img-product{
  padding-right: $space-2;
  display: flex;
@@ -32,17 +43,6 @@ transform: scale(1.1)
   margin-right: $space-2;
   border: solid 1px $gray-lighter;
   padding-left: $space-3;
-  }
-}
-.price{
-  &.gd{
-    font-size: $space-3;
-  }
-  &.md{
-    font-size: $space-2;
-  }
-  &.sm{
-    font-size: $space-base;
   }
 }
 .cost{

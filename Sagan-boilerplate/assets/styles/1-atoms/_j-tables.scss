@@ -13,7 +13,6 @@ table {
       padding-bottom: $space-base;
       padding-left: 0;
       span {
-        font-size: smaller;
         color: $gray-ghost; //Utilizamos este color por tener un color muy cercano al blanco con distinción del
       }
       &:first-child {
@@ -55,7 +54,6 @@ table {
       line-height: .5;
     }
     span {
-      font-size: smaller;
       color: $gray-regular;
     }
     input{

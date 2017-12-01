@@ -930,7 +930,6 @@ table {
     padding-bottom: 8px;
     padding-left: 0; }
     table tr th span {
-      font-size: smaller;
       color: #f2f2f2; }
     table tr th:last-child {
       padding-right: 0;
@@ -960,7 +959,6 @@ table {
     table td p {
       line-height: .5; }
     table td span {
-      font-size: smaller;
       color: gray; }
     table td input {
       width: 56px;
@@ -1272,6 +1270,13 @@ header.main-nav.responsive {
 .thumbnail-img img {
   width: 64px; }
 
+.price.gd {
+  font-size: 24px; }
+.price.md {
+  font-size: 16px; }
+.price.sm {
+  font-size: 8px; }
+
 .container-img-product {
   padding-right: 16px;
   display: flex;
@@ -1298,12 +1303,6 @@ header.main-nav.responsive {
     margin-right: 16px;
     border: solid 1px #d9d9d9;
     padding-left: 24px; }
-  .container-product .price.gd {
-    font-size: 24px; }
-  .container-product .price.md {
-    font-size: 16px; }
-  .container-product .price.sm {
-    font-size: 8px; }
   .container-product .cost {
     display: inline-flex; }
     .container-product .cost input {
