@@ -944,6 +944,8 @@ a:visited {
       color: #000000; }
     .container-form .step .step1 {
       font-weight: bold; }
+    .container-form .step .step2 span {
+      font-weight: normal; }
   .container-form .inline-elements {
     width: 100%;
     display: inline-flex; }
