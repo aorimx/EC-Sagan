@@ -29,7 +29,7 @@ $thumb-xl: 400px;
 		}
 	}
 }
-.thumnail-products-content{
+.thumbnail-products-content{
 	display: inline-flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -120,10 +120,11 @@ $thumb-xl: 400px;
 		background-color: gray;
 	};
 }
-.thumnail-products-list{
+.thumbnail-products-list{
 	display: inline-flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: flex-start;
 	padding-left: $space-2;
 	padding-right: $space-2;
 	width: 100%;
