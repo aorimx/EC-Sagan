@@ -957,7 +957,7 @@ table {
       text-align: right;
       width: 12%; }
     table td p {
-      line-height: .5; }
+      line-height: 1; }
     table td span {
       color: gray; }
     table td input {
